@@ -64,7 +64,7 @@ userRouter.get('/getProfile', async(req,res)=>{
   }
 })
 
-userRouter.Post('/calculate', async(req,res)=>{
+userRouter.post('/calculate', async(req,res)=>{
   const {annual_installment,interest,years} = req.body;
   let i = interest/100;
   let power = Math.pow(1+i,years)
